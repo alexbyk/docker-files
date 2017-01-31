@@ -23,16 +23,20 @@ RUN cpanm MongoDB \
 
 RUN cpanm \
   Evo \
-  Cpanel::JSON::XS \
   IO::Socket::SSL \
-  Time::Moment \
+  EV \
+  IO::Socket::Socks \
+  Net::DNS::Native \
   Mojolicious \
+  Cpanel::JSON::XS \
+  Time::Moment \
   Mojo::Pua \
   Image::PNG::QRCode \
   File::Copy::Recursive \
-  EV \
   Archive::Zip \
   Data::Dump \ 
+  Crypt::URandom \
+  Crypt::Argon2 \
 && rm -rf ~/.cpanm/work ~/.cpanm/sources
 
 WORKDIR /root
