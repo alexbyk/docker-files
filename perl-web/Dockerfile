@@ -32,7 +32,6 @@ RUN cpanm \
   Time::Moment \
   Mojo::Pua \
   Image::PNG::QRCode \
-  File::Copy::Recursive \
   Archive::Zip \
   Data::Dump \ 
   Crypt::URandom \
