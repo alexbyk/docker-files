@@ -17,11 +17,8 @@ RUN wget https://www.imagemagick.org/download/ImageMagick.tar.gz \
 && cd .. \
 && rm -Rf ImageMagick-* ImageMagick.tar.gz
 
-# takes long 
-RUN cpanm MongoDB \
-&& rm -rf ~/.cpanm/work ~/.cpanm/sources
-
-RUN cpanm \
+RUN cpanm -M https://cpan.metacpan.org \
+  MongoDB \
   Evo \
   IO::Socket::SSL \
   EV \
