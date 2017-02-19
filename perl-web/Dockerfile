@@ -33,6 +33,7 @@ RUN cpanm -M https://cpan.metacpan.org \
   Data::Dump \ 
   Crypt::URandom \
   Crypt::Argon2 \
+  Text::Lorem \
 && rm -rf ~/.cpanm/work ~/.cpanm/sources
 
 WORKDIR /root
